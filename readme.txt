@@ -33,27 +33,19 @@ Simplify your Stablecoin payment process and provide your customers with an intu
 3. Go to WooCommerce > Settings > Payments.
 4. Enable the "EURD Payments Gateway" and configure your API credentials.
 
-== External services ==
+== Development ==
 
-This plugin connects to the **QuantozPay** external payment service at  
-`https://api.quantozpay.com/` to generate and confirm EURD Stablecoin payment requests.
+This plugin is actively developed on GitHub at [SebtaTechnologies/eurd-payments-wc](https://github.com/SebtaTechnologies/eurd-payments-wc).
+We welcome contributions and bug reports. Please refer to our contributing guidelines for more details.
 
-**What it is & what it’s used for:**  
-  The QuantozPay API is provided by QuantozPay B.V. (a Dutch Electronic Money Institution) and is used to:  
-  1. **Create** payment requests (links or QR codes) for your WooCommerce orders.  
-  2. **Verify** payment status via webhook callbacks so that orders can be marked “paid” automatically.
+**How to contribute:**
+*   Fork the repository.
+*   Create a new branch for your feature or bug fix.
+*   Submit a pull request with a clear description of your changes.
 
-**What data is sent & when:**  
-  1. **At checkout**: your WooCommerce **Order ID**, **total amount**, **currency**, and your store’s **callback URL** along with your **API key/secret**.  
-  2. **On payment confirmation**: QuantozPay sends back the **transaction ID**, **paid amount**, **payment status**, and **order reference** to your configured webhook endpoint.
+**Reporting issues:**
+If you encounter any bugs or have feature requests, please open an issue on our GitHub repository.
 
-**Why & under which conditions:**  
-  - To display a valid EURD payment link or QR code to the customer.  
-  - To automatically update the WooCommerce order status when the customer’s EURD payment is received.
-
-**Terms & Privacy:**  
-  - Terms of Service: https://www.quantoz.com/terms-of-service  
-  - Privacy Policy: https://www.quantoz.com/privacy-policy  
 
 == External services ==
 
